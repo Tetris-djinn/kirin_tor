@@ -111,6 +111,29 @@ society_decisions = { #only available to members of a society
 			factor = 0.05
 		}
 	}
+	#Decision to perform magical experiment
+	magical_experiment_power = {
+		ai_check_interval = 36
+		potential = {
+			society_member_of = tutorial_society
+		}
+		allow = {
+			society_currency >= 250
+			custom_tooltip = {
+				text = has_not_used_decision_3_years_tooltip
+				hidden_tooltip = {
+					OR = {
+						NOT = { has_character_flag = magical_experiment_cooldown_flag }
+						had_character_flag = { flag = magical_experimant_cooldown_flag years = 3 }
+					}
+				}
+			}
+		}
+		effect = {
+			change_society_currency = -250
+			character_event = { id = TUTOSOCI.210 }
+		}
+	}
 	#Decision for restarting the guardian project
 	reinstitue_a_guardian = {
 		is_high_prio = yes

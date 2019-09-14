@@ -845,6 +845,15 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		if = {
+			trigger = {
+				quest_id = quest_tutorial_quest_1
+			}
+			effect = {
+				clr_quest = quest_tutorial_quest_1
+				change_society_currency = +300
+			}
+		}
 		random_list = {
 			25 = {
 				character_event = { id = TUTOSOCI.2100 days = 7 }
