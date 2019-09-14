@@ -1,0 +1,32 @@
+restored_guardian = {
+	inheritance = all_descendants
+	allow_bastards = no
+	picture = GFX_bloodlines_symbol_benevolent
+
+	command_modifier = {
+		center = 0.02
+	}
+	combat_rating = 10
+	arcane_group_opinion = 5
+	bloodline_effect_mage_training = 1
+
+	active = {
+		is_mage_class_trigger = yes
+	}
+}
+reclaimed_ebonchill = {
+	inheritance = all_descendants
+	allow_bastards = no
+	picture = GFX_bloodlines_symbol_benevolent
+
+	command_modifier = {
+		damage = 0.05
+	}
+	combat_rating = 10
+	arcane_group_opinion = 5
+	bloodline_effect_mage_training = 1
+
+	active = {
+		is_mage_class_trigger = yes
+	}
+}

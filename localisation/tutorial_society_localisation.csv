@@ -1,0 +1,187 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+#Make sure that this file in encoded in ANSI;;;;;;;;;;;;;;
+#The society name;;;;;;;;;;;;;;
+tutorial_society;The Kirin Tor;;;;;;;;;;;;;x
+string_tutorial_society;tutorial_society;;;;;;;;;;;;;x
+#The society description;;;;;;;;;;;;;;
+tutorial_society_desc;The Kirin Tor is an elite cadre of the most powerful wizards in the known world.;;;;;;;;;;;;;x
+#Leader description;;;;;;;;;;;;;;
+tutorial_society_leader_desc;The description of the leader of the society.;;;;;;;;;;;;;x
+#Name of the ranks;;;;;;;;;;;;;;
+tutorial_society_rank_1_female;Apprentice;;;;;;;;;;;;;x
+tutorial_society_rank_2_female;Evoker;;;;;;;;;;;;;x
+tutorial_society_rank_3_female;Magistrix;;;;;;;;;;;;;x
+tutorial_society_rank_4_female;Archmage;;;;;;;;;;;;;x
+tutorial_society_rank_1_male;Apprentice;;;;;;;;;;;;;x
+tutorial_society_rank_2_male;Evoker;;;;;;;;;;;;;x
+tutorial_society_rank_3_male;Magister;;;;;;;;;;;;;x
+tutorial_society_rank_4_male;Archmage;;;;;;;;;;;;;x
+#Name of the currency;;;;;;;;;;;;;;
+tutorial_society_currency;Arcane power;;;;;;;;;;;;;x
+#Rank up button name;;;;;;;;;;;;;;
+request_to_rank_up_within_tutorial_society;Request to rank up.;;;;;;;;;;;;;x
+#For tooltip that require being a member;;;;;;;;;;;;;;
+IS_tutorial_society_TRIGGER;Is a member of the Tutorial Society.;;;;;;;;;;;;;x
+#Rank up decision if you made a custom one, alongside the required custom_local;;;;;;;;;;;;;;
+request_to_rank_up_within_tutorial_society;Request a Promotion.;;;;;;;;;;;;;x
+request_to_rank_up_within_tutorial_society_tt;Has §Y[Root.Society.GetCurrency]§! greater or equal to [Root.GetSocietyRankUpTooltip1];;;;;;;;;;;;;x
+GetTutorialRankUpTooltip_Standard_Rank1;§Y[Root.Society.GetCurrency]§!;;;;;;;;;;;;;x
+GetTutorialRankUpTooltip_Standard_Rank2;§Y[Root.Society.GetCurrency]§!;;;;;;;;;;;;;x
+GetTutorialRankUpTooltip_Standard_Rank3;§Y[Root.Society.GetCurrency]§!;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#Name of the decision;;;;;;;;;;;;;;
+tutorial_society_power_1;Hire Kirin Tor mage;;;;;;;;;;;;;x
+#Tooltip of the decision;;;;;;;;;;;;;;
+tutorial_society_power_1_desc;Ask a mage of the Kirin Tor to join your court.;;;;;;;;;;;;;x
+#Tooltip of the decision in the society menu;;;;;;;;;;;;;;
+tutorial_society_power_1_power_desc;Ask a mage of the Kirin Tor to join your court.;;;;;;;;;;;;;x
+#The name of the passive power;;;;;;;;;;;;;;
+passive_power_tooltip;Passive Power;;;;;;;;;;;;;x
+#The description of the passive power;;;;;;;;;;;;;;
+passive_power_tooltip_power_desc;Passive powers are not real decision powers. They are to mark if X events have special interactions with people of that society and rank.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#The localization for the currency gain;;;;;;;;;;;;;;
+society_gain_tier_duke_tooltip;Is a Duke: §G+3.0§!;;;;;;;;;x # §G mean green;;;;
+society_gain_tier_catholic_tooltip;Is Catholic: §R-3.0§!;;;;;;;;;x # §R is red;;;;
+#;;;;;;;;;;;;;;
+#Modifiers;;;;;;;;;;;;;;
+tutorial_successful_mission;One Successful Mission;;;;;;;;;;;;;x
+tutorial_failed_mission;One Failed Mission;;;;;;;;;;;;;x
+tutorial_successful_mission_stacked;Many Successful Missions;;;;;;;;;;;;;x #the _stacked is for when there is several modifiers added to each others, so make them plural.
+tutorial_failed_mission_stacked;Many Failed Missions;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#This event is for joining;;;;;;;;;;;;;;
+EVTDESC_TUTOSOCI_102;You want to join my glorious society?;;;;;;;;;;;;;x
+EVTOPTA_TUTOSOCI_102;Yes sir.;;;;;;;;;;;;;x
+EVTOPTB_TUTOSOCI_102;I'm not so sure anymore.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#This event is for rank up;;;;;;;;;;;;;;
+EVTDESC_TUTOSOCI_122;Greetings [Root.GetSocietyRank] [Root.GetFirstName],\nYou can rank up. [Root.Society.GetName].\n\nSigned,\n[From.GetSocietyRank] [From.GetFirstName];;;;;;;;;;;;;x
+EVTOPTA_EVTDESC_TUTOSOCI_122_122;Great.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#Name for a quest;;;;;;;;;;;;;;
+quest_tutorial_quest_1;Press the button;;;;;;;;;;;;;x
+#Name for a quest if there is no quest target;;;;;;;;;;;;;;
+quest_tutorial_quest_1_fallback;Press the button;;;;;;;;;;;;;x
+quest_tutorial_quest_1_desc;Press the button and gain gold!;;;;;;;;;;;;;x
+quest_tutorial_quest_1_tooltip;Press the button in the intrige menu.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#Start Quest event;;;;;;;;;;;;;;
+EVTDESC_TUTOSOCI_141;You want a quest?;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#End Quest event;;;;;;;;;;;;;;
+EVTDESC_TUTOSOCI_142;You want to complete or fail the quest?;;;;;;;;;;;;;x
+EVTOPTA_TUTOSOCI_142;Complete it.;;;;;;;;;;;;;x
+EVTOPTB_TUTOSOCI_142;Fail it..;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#End Quest event;;;;;;;;;;;;;;
+EVTDESC_TUTOSOCI_150;Here be the event text.;;;;;;;;;;;;;x
+EVTOPTA_TUTOSOCI_150;Choice 1.;;;;;;;;;;;;;x
+EVTOPTB_TUTOSOCI_150;Choice 2..;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#Hire Kirin Tor mage event text.;;;;;;;;;;;;;;
+EVTDESC_TUTOSOCI_160;A Kirin Tor mage has arrived in your court;;;;;;;;;;;;;x
+EVTOPTA_TUTOSOCI_160;Excellent;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#Ebonchill event chain;;;;;;;;;;;;;;
+EVTDESC_TUTOSOCI_170;During my time as the Guardian of Tirisfal I have come to realise that the amount of good I can do is largely limited by the tools at my disposal. As I ponder this I suddenly remember the stories of Ebonchill, the legendary staff of Alodai, the first guardian. The staff has been locked away by the Kirin Tor for a long time waiting for a mage powerful enough to responsibly wield it. Perhaps I am that mage?;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_1700;Yes, I will claim the staff. For the Kirin Tor!;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_1701;No, I am not yet ready to wield such power.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+EVTDESC_TUTOSOCI_171;As the other archmages help me disable the wards protecting the staff I finally lay my eyes on it. The staff with its ornatly carved handle with what looks like an ice crystal suspended above it almost seems to be radiating power. As I step foward and grab the staff I feel stronger and i know that I made the right choice.;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_171;Finally I have the tools necessary to save this world.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+#Ebonchill;;;;;;;;;;;;;;
+ebonchill;Ebonchill;;;;;;;;;;;;;x
+ebonchill_desc;This greatstaff was wielded by Alodi, the first Guardian of Tirisfal. He bore the staff into many battles against Legion forces for the century in which he served as Guardian, then stepped down from the role of Guardian, but he retained the staff to his dying day. Upon his passing, the Kirin Tor stored the staff safely away for fear of what might happen if a lesser mage attempted to wield its power without the ability to control it fully;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+# Death of the guardian;;;;;;;;;;;;;;x
+TITLE_TUTOSOCI_1720;Death of the Guardian of Tirisfal;;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_1720;The Guardian of Tirisfal is a mortal given power by the most senior members of the Kirin Tor to fight the evils of this world. With the resent death of [Root.GetFirstName] however Azeroth once again stands without a guardian.;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_1720;What will this mean for the future of our world?;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+# Reinstitution of the guardian;;;;;;;;;;;;;;
+TITLE_TUTOSOCI_190;The Guardian of Tirisfal;;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_190;The Guardian of Tirisfal is a mortal given power by the most senior members of the Kirin Tor to fight the evils of this world. It has been long since Azeroth had had a guardian fighting for its interests. Perhaps with all that is going on in the world it is time someone once again took up the mantle of guardian?;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_190;I will take on the role of Azeroths protector!;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+TITLE_TUTOSOCI_191;The ritual is performed;;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_191;After gathering the other Archmages of the Kirin Tor they agree to lend me some of their power so that I can become the next guardian. As the ritual concludes I feel my newfound strength and the weight of the responsibility that comes with it.;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_191;I will do my best to help save this world.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+TITLE_TUTOSOCI_192;A new guardian ascends;;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_192;The reforemd council of Tirisfal has decided to once again name a guadian, a mortal given power by the most senior members of the Kirin Tor to fight the evils of this world.;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_192;Azeroth once again has a champion in the fight against evil.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+reinstitue_a_guardian;Reinstitute the Guardian of Tirisfal;;;;;;;;;;;;;x
+reinstitue_a_guardian_desc;Reform the council of Tirisfal and become the next guardian.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+# Become Guardian, repeatable;;;;;;;;;;;;;;
+TITLE_TUTOSOCI_193;Becoming the Guardian;;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_193;The death of the last guardian has been felt. Perhaps it is time that I step into their shoes and take up the mantle of guardian?;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_1930;I will do my best to live up to the title of guardian.;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_1931;I am not ready for the responsibility.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+# Bloodlines and nicknames;;;;;;;;;;;;;;
+nick_ebonbolt;Ebonbolt;;;;;;;;;;;;;x
+restored_guardian;Blood of [This.GetFirstNameWithNick];;;;;;;;;;;;;x
+restored_guardian_desc;[This.GetFirstNameWithNick] was the mage who reformed the council of Tirisfal and later went on to be the first in a new line of guardians.;;;;;;;;;;;;;x
+reclaimed_ebonchill;Blood of [This.GetFirstNameWithNick];;;;;;;;;;;;x
+reclaimed_ebonchill_desc;[This.GetFirstNameWithNick] reclaimed Ebonchill, the staff of the first guardian.;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+# Dynamic spell book;;;;;;;;;;;;;;
+spellbook_lvl_1;Basic Spell Book;;;;;;;;;;;;;x
+spellbook_lvl_1_desc;A Spell book containing some basic spells.;;;;;;;;;;;;;x
+spellbook_lvl_2;Advanced Spell Book;;;;;;;;;;;;;x
+spellbook_lvl_2_desc;A spell book containing a few spells of the advanced variety.;;;;;;;;;;;;;x
+spellbook_lvl_3;Expert Spell Book;;;;;;;;;;;;;x
+spellbook_lvl_3_desc;A spell book written by someone with a great insight into the art of spellcrafting.;;;;;;;;;;;;;x
+spellbook_lvl_4_battle; Master Spell Book of Battle;;;;;;;;;;;;;x
+spellbook_lvl_4_battle_desc;A spell book containing the writings of a master spellcrafter with a focus on incantations useful on the battlefield.;;;;;;;;;;;;;x
+spellbook_lvl_4_teleportation; Master Spell Book of Teleportation;;;;;;;;;;;;;x
+spellbook_lvl_4_teleportation_desc;A spell book containing the writings of a master spellcrafter with a focus on Teleportation and it's role in army organisation.;;;;;;;;;;;;;x
+spellbook_lvl_4_telekinesis; Master Spell Book of Telekinesis;;;;;;;;;;;;;x
+spellbook_lvl_4_telekinesis_desc;A spell book containing the writings of a master spellcrafter with a focus on telekinesis and its uses within construction.;;;;;;;;;;;;;x
+spellbook_lvl_4_theory; Master Spell Book of Magicl Theory;;;;;;;;;;;;;x
+spellbook_lvl_4_theory_desc;A spell book containing the writings of a master spellcrafter with a focus on the theroy of magic and other scholarly pursuits.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;
+# Spell book upgrade decisions;;;;;;;;;;;;;;
+create_spell_book;Create Spell Book;;;;;;;;;;;;;x
+create_spell_book_desc;Create a basic spell book.;;;;;;;;;;;;;x
+create_spell_book_power_desc;Create a basic spell book.;;;;;;;;;;;;;x
+upgrade_spell_book_lvl_2;Upgrade Spell Book;;;;;;;;;;;;;x
+upgrade_spell_book_lvl_2_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
+upgrade_spell_book_lvl_2_power_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
+upgrade_spell_book_lvl_3;Upgrade Spell Book;;;;;;;;;;;;;x
+upgrade_spell_book_lvl_3_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
+upgrade_spell_book_lvl_3_power_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
+upgrade_spell_book_lvl_4;Upgrade Spell Book;;;;;;;;;;;;;x
+upgrade_spell_book_lvl_4_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
+upgrade_spell_book_lvl_4_power_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;
+# Spell book level 4 upgrade event;;;;;;;;;;;;;;
+TITLE_TUTOSOCI_203;True Mastery;;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_203;The time has come for me to write down all I know about the most complicated spells in my repertoire, however I can only focus on so much. Which area should I primarily focus on?;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_2030;Incantations for the battlefield.;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_2031;Teleportation magic.;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_2032;Construction with Telekinesis.;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_2033;Magical theory and scholarship.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;
+# Magical experiments;;;;;;;;;;;;;
+# Explosion;;;;;;;;;;;;;
+EVTDESC_TUTOSOCI_2100;As you finish the experiment a loud explosion hits you and you are flung across the room.;;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_2100;Oww oof my bones.;;;;;;;;;;;;;x
+# A helping hand;;;;;;;;;;;;;
+EVTDESC_TUTOSOCI_21011;Although my experiment failed I have been spending a lot of time with [From.GetFirstName] discussing potential improvements for future endeavours.;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_21011A; I think I might be falling in love.;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_21011B; This is friendship.;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_21011C; I'm clearly the better mage.;;;;;;;;;;;;x
+# The nature of undeath
+EVTDESC_TUTOSOCI_2102;As I'm designing my experiment I come across some references to rituals pertaining to create undead creatures.;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_2102A;I will try it out on myself, what ccould go wrong?;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_2102B;I will keep studying this dark magic.;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_2102C;No this is going too far, I have learned enough.;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_21020;As the ritual completes I can feel my heartbeat stop and I go cold as my blood flow slows. I have become undead.;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_21020A;Hopefully I won't come to regret this...;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_21021;I look through my library and I manage to find a few more tomes relating to the dark subject of necromancy.;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_21021A;Today I begin my studies.;;;;;;;;;;;;x
