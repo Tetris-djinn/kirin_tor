@@ -776,8 +776,8 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_character_flag = created_spell_book
-		add_artifact = spellbook_lvl_1		
+		set_character_flag = created_insignia
+		add_artifact = insignia_lvl_1		
 	}
 }
 character_event = {
@@ -787,9 +787,9 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_character_flag = upgraded_spell_book_lvl_2
-		destroy_artifact = spellbook_lvl_1
-		add_artifact = spellbook_lvl_2		
+		set_character_flag = upgraded_insignia_lvl_2
+		destroy_artifact = insignia_lvl_1
+		add_artifact = insignia_lvl_2		
 	}
 }
 character_event = {
@@ -799,9 +799,9 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_character_flag = upgraded_spell_book_lvl_3
-		destroy_artifact = spellbook_lvl_2
-		add_artifact = spellbook_lvl_3		
+		set_character_flag = upgraded_insignia_lvl_3
+		destroy_artifact = insignia_lvl_2
+		add_artifact = insignia_lvl_3		
 	}
 }
 narrative_event = {
@@ -815,27 +815,27 @@ narrative_event = {
 
 	option = { #Battle
 		name = EVTOPT_TUTOSOCI_2030
-		set_character_flag = upgraded_spell_book_lvl_4
-		destroy_artifact = spellbook_lvl_3
-		add_artifact = spellbook_lvl_4_battle
+		set_character_flag = upgraded_insignia_lvl_4
+		destroy_artifact = insignia_lvl_3
+		add_artifact = insignia_lvl_4_battle
 	}
 	option = { #Teleportation
 		name = EVTOPT_TUTOSOCI_2031
-		set_character_flag = upgraded_spell_book_lvl_4
-		destroy_artifact = spellbook_lvl_3
-		add_artifact = spellbook_lvl_4_teleportation
+		set_character_flag = upgraded_insignia_lvl_4
+		destroy_artifact = insignia_lvl_3
+		add_artifact = insignia_lvl_4_teleportation
 	}
 	option = { #Telekinesis
 		name = EVTOPT_TUTOSOCI_2032
-		set_character_flag = upgraded_spell_book_lvl_4
-		destroy_artifact = spellbook_lvl_3
-		add_artifact = spellbook_lvl_4_telekinesis
+		set_character_flag = upgraded_insignia_lvl_4
+		destroy_artifact = insignia_lvl_3
+		add_artifact = insignia_lvl_4_telekinesis
 	}
 	option = { #Theory
 		name = EVTOPT_TUTOSOCI_2033
-		set_character_flag = upgraded_spell_book_lvl_4
-		destroy_artifact = spellbook_lvl_3
-		add_artifact = spellbook_lvl_4_theory
+		set_character_flag = upgraded_insignia_lvl_4
+		destroy_artifact = insignia_lvl_3
+		add_artifact = insignia_lvl_4_theory
 	}
 }
 # Magical research

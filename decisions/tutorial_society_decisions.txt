@@ -162,11 +162,11 @@ society_decisions = { #only available to members of a society
 		}
 	}
 	#Create spell book
-	create_spell_book = {
+	create_insignia = {
 		is_high_prio = yes
 		potential = {
 			society_rank >= 1
-			NOT = { has_character_flag = created_spell_book }
+			NOT = { has_character_flag = created_insignia }
 		}
 		allow = {
 			society_currency = 100
@@ -176,12 +176,12 @@ society_decisions = { #only available to members of a society
 			change_society_currency = -100
 		}
 	}
-	upgrade_spell_book_lvl_2 = {
+	upgrade_insignia_lvl_2 = {
 		is_high_prio = yes
 		potential = {
 			society_rank >= 2
-			NOT = { has_character_flag = upgraded_spell_book_lvl_2 }
-			has_character_flag = created_spell_book
+			NOT = { has_character_flag = upgraded_insignia_lvl_2 }
+			has_character_flag = created_insignia
 		}
 		allow = {
 			society_currency = 150
@@ -191,12 +191,12 @@ society_decisions = { #only available to members of a society
 			change_society_currency = -150
 		}
 	}
-	upgrade_spell_book_lvl_3 = {
+	upgrade_insignia_lvl_3 = {
 		is_high_prio = yes
 		potential = {
 			society_rank >= 3
-			NOT = { has_character_flag = upgraded_spell_book_lvl_3 }
-			has_character_flag = upgraded_spell_book_lvl_2
+			NOT = { has_character_flag = upgraded_insignia_lvl_3 }
+			has_character_flag = upgraded_insignia_lvl_2
 		}
 		allow = {
 			society_currency = 200
@@ -206,12 +206,12 @@ society_decisions = { #only available to members of a society
 			change_society_currency = -200
 		}
 	}
-	upgrade_spell_book_lvl_4 = {
+	upgrade_insignia_lvl_4 = {
 		is_high_prio = yes
 		potential = {
 			society_rank == 4
-			NOT = { has_character_flag = upgraded_spell_book_lvl_4 }
-			has_character_flag = upgraded_spell_book_lvl_3
+			NOT = { has_character_flag = upgraded_insignia_lvl_4 }
+			has_character_flag = upgraded_insignia_lvl_3
 		}
 		allow = {
 			society_currency = 250

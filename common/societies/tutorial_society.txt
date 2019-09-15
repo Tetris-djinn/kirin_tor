@@ -60,7 +60,7 @@ tutorial_society = { #society code name
 		decisions = { #rank based decisions power
 			tutorial_society_power_1 #this one has a decision
 
-			create_spell_book
+			create_insignia
 			
 			passive_power_tooltip #this one is just a tooltip
 			#Passive powers are not real decision powers. They are to mark if X events have special interactions with people of that society and rank.
@@ -76,7 +76,7 @@ tutorial_society = { #society code name
 			arcane_group_opinion = +10
 		}
 		decisions = {
-			upgrade_spell_book_lvl_2
+			upgrade_insignia_lvl_2
 		}
 	}
 	
@@ -89,7 +89,7 @@ tutorial_society = { #society code name
 			arcane_group_opinion = +15
 		}
 		decisions = {
-			upgrade_spell_book_lvl_3
+			upgrade_insignia_lvl_3
 		}
 	}
 
@@ -102,7 +102,7 @@ tutorial_society = { #society code name
 			arcane_group_opinion = +20
 		}
 		decisions = {
-			upgrade_spell_book_lvl_4
+			upgrade_insignia_lvl_4
 		}
 	}
 	

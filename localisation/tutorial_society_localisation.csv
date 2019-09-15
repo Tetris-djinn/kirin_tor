@@ -51,8 +51,8 @@ tutorial_successful_mission_stacked;Many Successful Missions;;;;;;;;;;;;;x #the 
 tutorial_failed_mission_stacked;Many Failed Missions;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;
 #This event is for joining;;;;;;;;;;;;;;
-EVTDESC_TUTOSOCI_102;You want to join my glorious society?;;;;;;;;;;;;;x
-EVTOPTA_TUTOSOCI_102;Yes sir.;;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_102;You want to join the Kirin Tor?;;;;;;;;;;;;;x
+EVTOPTA_TUTOSOCI_102;Yes, archmage.;;;;;;;;;;;;;x
 EVTOPTB_TUTOSOCI_102;I'm not so sure anymore.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;
 #This event is for rank up;;;;;;;;;;;;;;
@@ -129,37 +129,38 @@ restored_guardian_desc;[This.GetFirstNameWithNick] was the mage who reformed the
 reclaimed_ebonchill;Blood of [This.GetFirstNameWithNick];;;;;;;;;;;;x
 reclaimed_ebonchill_desc;[This.GetFirstNameWithNick] reclaimed Ebonchill, the staff of the first guardian.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;
-# Dynamic spell book;;;;;;;;;;;;;;
-spellbook_lvl_1;Basic Spell Book;;;;;;;;;;;;;x
-spellbook_lvl_1_desc;A Spell book containing some basic spells.;;;;;;;;;;;;;x
-spellbook_lvl_2;Advanced Spell Book;;;;;;;;;;;;;x
-spellbook_lvl_2_desc;A spell book containing a few spells of the advanced variety.;;;;;;;;;;;;;x
-spellbook_lvl_3;Expert Spell Book;;;;;;;;;;;;;x
-spellbook_lvl_3_desc;A spell book written by someone with a great insight into the art of spellcrafting.;;;;;;;;;;;;;x
-spellbook_lvl_4_battle; Master Spell Book of Battle;;;;;;;;;;;;;x
-spellbook_lvl_4_battle_desc;A spell book containing the writings of a master spellcrafter with a focus on incantations useful on the battlefield.;;;;;;;;;;;;;x
-spellbook_lvl_4_teleportation; Master Spell Book of Teleportation;;;;;;;;;;;;;x
-spellbook_lvl_4_teleportation_desc;A spell book containing the writings of a master spellcrafter with a focus on Teleportation and it's role in army organisation.;;;;;;;;;;;;;x
-spellbook_lvl_4_telekinesis; Master Spell Book of Telekinesis;;;;;;;;;;;;;x
-spellbook_lvl_4_telekinesis_desc;A spell book containing the writings of a master spellcrafter with a focus on telekinesis and its uses within construction.;;;;;;;;;;;;;x
-spellbook_lvl_4_theory; Master Spell Book of Magicl Theory;;;;;;;;;;;;;x
-spellbook_lvl_4_theory_desc;A spell book containing the writings of a master spellcrafter with a focus on the theroy of magic and other scholarly pursuits.;;;;;;;;;;;;;x
+# Dynamic Insignia;;;;;;;;;;;;;;
+insignia_lvl_1;Basic insignia;;;;;;;;;;;;;x
+insignia_lvl_1_desc;A insignia containing some basic spells.;;;;;;;;;;;;;x
+insignia;Insignia;;;;;;;;;;;;;x
+insignia_lvl_2;Advanced insignia;;;;;;;;;;;;;x
+insignia_lvl_2_desc;A insignia containing a few spells of the advanced variety.;;;;;;;;;;;;;x
+insignia_lvl_3;Expert insignia;;;;;;;;;;;;;x
+insignia_lvl_3_desc;A insignia written by someone with a great insight into the art of spellcrafting.;;;;;;;;;;;;;x
+insignia_lvl_4_battle; Master insignia of Battle;;;;;;;;;;;;;x
+insignia_lvl_4_battle_desc;A insignia containing the writings of a master spellcrafter with a focus on incantations useful on the battlefield.;;;;;;;;;;;;;x
+insignia_lvl_4_teleportation; Master insignia of Teleportation;;;;;;;;;;;;;x
+insignia_lvl_4_teleportation_desc;A insignia containing the writings of a master spellcrafter with a focus on Teleportation and it's role in army organisation.;;;;;;;;;;;;;x
+insignia_lvl_4_telekinesis; Master insignia of Telekinesis;;;;;;;;;;;;;x
+insignia_lvl_4_telekinesis_desc;A insignia containing the writings of a master spellcrafter with a focus on telekinesis and its uses within construction.;;;;;;;;;;;;;x
+insignia_lvl_4_theory; Master insignia of Magical Theory;;;;;;;;;;;;;x
+insignia_lvl_4_theory_desc;A insignia containing the writings of a master spellcrafter with a focus on the theroy of magic and other scholarly pursuits.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;
-# Spell book upgrade decisions;;;;;;;;;;;;;;
-create_spell_book;Create Spell Book;;;;;;;;;;;;;x
-create_spell_book_desc;Create a basic spell book.;;;;;;;;;;;;;x
-create_spell_book_power_desc;Create a basic spell book.;;;;;;;;;;;;;x
-upgrade_spell_book_lvl_2;Upgrade Spell Book;;;;;;;;;;;;;x
-upgrade_spell_book_lvl_2_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
-upgrade_spell_book_lvl_2_power_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
-upgrade_spell_book_lvl_3;Upgrade Spell Book;;;;;;;;;;;;;x
-upgrade_spell_book_lvl_3_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
-upgrade_spell_book_lvl_3_power_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
-upgrade_spell_book_lvl_4;Upgrade Spell Book;;;;;;;;;;;;;x
-upgrade_spell_book_lvl_4_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
-upgrade_spell_book_lvl_4_power_desc;Upgrade your spellbook.;;;;;;;;;;;;;x
+# Insignia upgrade decisions;;;;;;;;;;;;;;
+create_insignia;Create insignia;;;;;;;;;;;;;x
+create_insignia_desc;Create a basic insignia.;;;;;;;;;;;;;x
+create_insignia_power_desc;Create a basic insignia.;;;;;;;;;;;;;x
+upgrade_insignia_lvl_2;Upgrade insignia;;;;;;;;;;;;;x
+upgrade_insignia_lvl_2_desc;Upgrade your insignia.;;;;;;;;;;;;;x
+upgrade_insignia_lvl_2_power_desc;Upgrade your insignia.;;;;;;;;;;;;;x
+upgrade_insignia_lvl_3;Upgrade insignia;;;;;;;;;;;;;x
+upgrade_insignia_lvl_3_desc;Upgrade your insignia.;;;;;;;;;;;;;x
+upgrade_insignia_lvl_3_power_desc;Upgrade your insignia.;;;;;;;;;;;;;x
+upgrade_insignia_lvl_4;Upgrade insignia;;;;;;;;;;;;;x
+upgrade_insignia_lvl_4_desc;Upgrade your insignia.;;;;;;;;;;;;;x
+upgrade_insignia_lvl_4_power_desc;Upgrade your insignia.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;
-# Spell book level 4 upgrade event;;;;;;;;;;;;;;
+# Insignia level 4 upgrade event;;;;;;;;;;;;;;
 TITLE_TUTOSOCI_203;True Mastery;;;;;;;;;;;;;x
 EVTDESC_TUTOSOCI_203;The time has come for me to write down all I know about the most complicated spells in my repertoire, however I can only focus on so much. Which area should I primarily focus on?;;;;;;;;;;;;;x
 EVTOPT_TUTOSOCI_2030;Incantations for the battlefield.;;;;;;;;;;;;;x

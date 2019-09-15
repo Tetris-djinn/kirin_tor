@@ -1,3 +1,6 @@
+slots = {
+	insignia = 1
+}
 ebonchill = {
 	quality = 5
 	flags = { combat_weapon magic_staff kirin_tor ebonchill}
@@ -21,9 +24,9 @@ ebonchill = {
 	picture = "GFX_inv_staff_medivh"
 	slot = weapon
 }
-spellbook_lvl_1 = {
+insignia_lvl_1 = {
 	quality = 1
-	flags = { spell_book kirin_tor }
+	flags = { insignia kirin_tor }
 
 	active = {
 		is_adult = yes
@@ -39,11 +42,11 @@ spellbook_lvl_1 = {
 	combat_rating = 5
 
 	picture = GFX_inv_misc_book_16
-	slot = library
+	slot = insignia
 }
-spellbook_lvl_2 = {
+insignia_lvl_2 = {
 	quality = 2
-	flags = { spell_book kirin_tor }
+	flags = { insignia kirin_tor }
 
 	active = {
 		is_adult = yes
@@ -59,11 +62,11 @@ spellbook_lvl_2 = {
 	combat_rating = 10
 
 	picture = GFX_inv_misc_book_16
-	slot = library
+	slot = insignia
 }
-spellbook_lvl_3 = {
+insignia_lvl_3 = {
 	quality = 3
-	flags = { spell_book kirin_tor }
+	flags = { insignia kirin_tor }
 
 	active = {
 		is_adult = yes
@@ -79,11 +82,11 @@ spellbook_lvl_3 = {
 	combat_rating = 15
 
 	picture = GFX_inv_misc_book_16
-	slot = library
+	slot = insignia
 }
-spellbook_lvl_4_battle = {
+insignia_lvl_4_battle = {
 	quality = 4
-	flags = { spell_book kirin_tor }
+	flags = { insignia kirin_tor }
 
 	active = {
 		is_adult = yes
@@ -100,11 +103,11 @@ spellbook_lvl_4_battle = {
 	siege_speed = 0.15
 
 	picture = GFX_inv_misc_book_16
-	slot = library
+	slot = insignia
 }
-spellbook_lvl_4_teleportation = {
+insignia_lvl_4_teleportation = {
 	quality = 4
-	flags = { spell_book kirin_tor }
+	flags = { insignia kirin_tor }
 
 	active = {
 		is_adult = yes
@@ -121,11 +124,11 @@ spellbook_lvl_4_teleportation = {
 	levy_size = 0.10
 
 	picture = GFX_inv_misc_book_16
-	slot = library
+	slot = insignia
 }
-spellbook_lvl_4_telekinesis = {
+insignia_lvl_4_telekinesis = {
 	quality = 4
-	flags = { spell_book kirin_tor }
+	flags = { insignia kirin_tor }
 
 	active = {
 		is_adult = yes
@@ -143,11 +146,11 @@ spellbook_lvl_4_telekinesis = {
 	build_time_modifier = -0.075
 
 	picture = GFX_inv_misc_book_16
-	slot = library
+	slot = insignia
 }
-spellbook_lvl_4_theory = {
+insignia_lvl_4_theory = {
 	quality = 4
-	flags = { spell_book kirin_tor }
+	flags = { insignia kirin_tor }
 
 	active = {
 		is_adult = yes
@@ -164,5 +167,5 @@ spellbook_lvl_4_theory = {
 	arcane_group_opinion = +10
 
 	picture = GFX_inv_misc_book_16
-	slot = library
+	slot = insignia
 }
