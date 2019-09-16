@@ -92,7 +92,7 @@ society_decisions = { #only available to members of a society
 
 	#Decision "power" for rank 1
 	tutorial_society_power_1 = {
-
+		ai_check_interval = 3
 		potential = { #who can see it
 			society_member_of = tutorial_society #which society
 			NOT = { has_character_flag = is_kirin_tor_teacher }
@@ -225,6 +225,7 @@ society_decisions = { #only available to members of a society
 	}
 	# Train to become battle mage decision
 	battle_mage_training = {
+		ai_check_interval = 12
 		is_high_prio = yes
 		potential = {
 			society_rank >= 3
@@ -238,6 +239,9 @@ society_decisions = { #only available to members of a society
 			set_character_flag = battle_mage
 			change_society_currency = -500
 			narrative_event = { id = TUTOSOCI.220 }
+		}
+		ai_will_do = {
+			factor = 0.03
 		}
 
 	}
