@@ -1076,5 +1076,20 @@ narrative_event = {
 	is_triggered_only = yes
 	option = {
 		name = EVTOPT_TUTOSOCI_222
+		if = {
+			limit = {
+				has_character_flag = arcane
+			}
+			add_trait = arcane_mage
+		}
+		else_if = {
+			limit = {
+				has_character_flag = fire
+			}
+			add_trait = fire_mage
+		}
+		else = {
+			add_trait = frost_mage
+		}
 	}
 }

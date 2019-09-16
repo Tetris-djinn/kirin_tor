@@ -228,12 +228,14 @@ society_decisions = { #only available to members of a society
 		is_high_prio = yes
 		potential = {
 			society_rank >= 3
+			NOT = { has_character_flag = battle_mage }
 		}
 		allow = {
 			society_currency = 500
 			martial >= 15
 		}
 		effect = {
+			set_character_flag = battle_mage
 			change_society_currency = -500
 			narrative_event = { id = TUTOSOCI.220 }
 		}
