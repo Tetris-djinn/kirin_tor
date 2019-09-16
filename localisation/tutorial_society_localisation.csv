@@ -137,13 +137,13 @@ insignia_lvl_2;Advanced insignia;;;;;;;;;;;;;x
 insignia_lvl_2_desc;A insignia containing a few spells of the advanced variety.;;;;;;;;;;;;;x
 insignia_lvl_3;Expert insignia;;;;;;;;;;;;;x
 insignia_lvl_3_desc;A insignia written by someone with a great insight into the art of spellcrafting.;;;;;;;;;;;;;x
-insignia_lvl_4_battle; Master insignia of Battle;;;;;;;;;;;;;x
+insignia_lvl_4_battle;Master insignia of Battle;;;;;;;;;;;;;x
 insignia_lvl_4_battle_desc;A insignia containing the writings of a master spellcrafter with a focus on incantations useful on the battlefield.;;;;;;;;;;;;;x
-insignia_lvl_4_teleportation; Master insignia of Teleportation;;;;;;;;;;;;;x
+insignia_lvl_4_teleportation;Master insignia of Teleportation;;;;;;;;;;;;;x
 insignia_lvl_4_teleportation_desc;A insignia containing the writings of a master spellcrafter with a focus on Teleportation and it's role in army organisation.;;;;;;;;;;;;;x
-insignia_lvl_4_telekinesis; Master insignia of Telekinesis;;;;;;;;;;;;;x
+insignia_lvl_4_telekinesis;Master insignia of Telekinesis;;;;;;;;;;;;;x
 insignia_lvl_4_telekinesis_desc;A insignia containing the writings of a master spellcrafter with a focus on telekinesis and its uses within construction.;;;;;;;;;;;;;x
-insignia_lvl_4_theory; Master insignia of Magical Theory;;;;;;;;;;;;;x
+insignia_lvl_4_theory;Master insignia of Magical Theory;;;;;;;;;;;;;x
 insignia_lvl_4_theory_desc;A insignia containing the writings of a master spellcrafter with a focus on the theroy of magic and other scholarly pursuits.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;
 # Insignia upgrade decisions;;;;;;;;;;;;;;
@@ -177,7 +177,9 @@ EVTDESC_TUTOSOCI_21011;Although my experiment failed I have been spending a lot 
 EVTOPT_TUTOSOCI_21011A; I think I might be falling in love.;;;;;;;;;;;;x
 EVTOPT_TUTOSOCI_21011B; This is friendship.;;;;;;;;;;;;x
 EVTOPT_TUTOSOCI_21011C; I'm clearly the better mage.;;;;;;;;;;;;x
-# The nature of undeath
+# The nature of undeath;;;;;;;;;;;;;
+magical_experiment_power;Perform magical experiment;;;;;;;;;;;;x
+magical_experiment_power_desc;Perform a magical experiment.;;;;;;;;;;;;x
 EVTDESC_TUTOSOCI_2102;As I'm designing my experiment I come across some references to rituals pertaining to create undead creatures.;;;;;;;;;;;;x
 EVTOPT_TUTOSOCI_2102A;I will try it out on myself, what ccould go wrong?;;;;;;;;;;;;x
 EVTOPT_TUTOSOCI_2102B;I will keep studying this dark magic.;;;;;;;;;;;;x

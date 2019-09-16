@@ -89,7 +89,7 @@ society_decisions = { #only available to members of a society
 			factor = 1
 		}
 	}
-	
+
 	#Decision "power" for rank 1
 	tutorial_society_power_1 = {
 
@@ -131,6 +131,8 @@ society_decisions = { #only available to members of a society
 		}
 		effect = {
 			change_society_currency = -250
+			clr_character_flag = magical_experiment_cooldown_flag
+			set_character_flag = magical_experiment_cooldown_flag
 			character_event = { id = TUTOSOCI.210 }
 		}
 	}

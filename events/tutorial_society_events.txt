@@ -442,6 +442,7 @@ character_event = {
         name = EVTOPTB_TUTOSOCI_150
     }
 }
+# Hire Kirin Tor advisor
 character_event = {
 	id = TUTOSOCI.160
 	hide_window = yes
@@ -769,6 +770,7 @@ narrative_event = {
 		name = EVTOPT_TUTOSOCI_1931
 	}
 }
+# Dynamic insignia creation and upgrades
 character_event = {
 	id = TUTOSOCI.200
 	hide_window = yes
@@ -846,13 +848,11 @@ character_event = {
 
 	immediate = {
 		if = {
-			trigger = {
-				quest_id = quest_tutorial_quest_1
+			limit = {
+				has_quest = quest_tutorial_quest_1
 			}
-			effect = {
-				clr_quest = quest_tutorial_quest_1
-				change_society_currency = +300
-			}
+			clr_quest = quest_tutorial_quest_1
+			change_society_currency = +300
 		}
 		random_list = {
 			25 = {
@@ -996,7 +996,7 @@ character_event = {
 	}
 	option = {
 		name = EVTOPT_TUTOSOCI_2102C
-		learning = +1
+		change_learning = 2
 	}
 }
 character_event = {
