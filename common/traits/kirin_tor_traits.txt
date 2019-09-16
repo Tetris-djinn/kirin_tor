@@ -6,3 +6,27 @@ battle_mage = {
 	martial = 5
 	combat_rating = 15
 }
+arcane_mage = {
+	random = no
+	command_modifier = {
+		flank = 0.3
+		retreat = 0.2
+		speed = 0.1
+	}
+}
+fire_mage = {
+	random = no
+	command_modifier = {
+		damage = 0.2
+		morale_offence = 0.1
+		siege = 0.2
+	}
+}
+frost_mage = {
+	random = no
+	command_modifier = {
+		defence = 0.2
+		pursue = 0.25
+		morale_defence = 0.2
+	}
+}

@@ -205,3 +205,9 @@ TITLE_TUTOSOCI_222;Training finished;;;;;;;;;;;x
 EVTOPT_TUTOSOCI_222;Ready for action!;;;;;;;;;;;x
 battle_mage;Battle mage;;;;;;;;;;x
 battle_mage_desc;This person has put great focus on combat based magic.;;;;;;;;;;x
+arcane_mage;Arcane mage;;;;;;;;;;x
+arcane_mage_desc;This person uses arcane magic in combat.;;;;;;;;;;x
+fire_mage;Fire mage;;;;;;;;;;x
+fire_mage_desc;This person uses fire magic in combat.;;;;;;;;;;x
+frost_mage;Frost mage;;;;;;;;;;x
+frost_mage_desc;This person uses frost magic in combat.;;;;;;;;;;x

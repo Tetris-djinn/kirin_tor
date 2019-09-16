@@ -64,4 +64,16 @@ spriteTypes = {
 		name = GFX_trait_battle_mage
 		texturefile = gfx/traits/kirin_tor.dds
 	}
+	spriteType = {
+		name = GFX_trait_arcane_mage
+		texturefile = gfx/traits/being_void.dds
+	}
+	spriteType = {
+		name = GFX_trait_fire_mage
+		texturefile = gfx/traits/elemental_lord_fire.dds
+	}
+	spriteType = {
+		name = GFX_trait_frost_mage
+		texturefile = gfx/traits/creature_elementalwater.dds
+	}
 }
