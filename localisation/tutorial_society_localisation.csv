@@ -188,3 +188,18 @@ EVTDESC_TUTOSOCI_21020;As the ritual completes I can feel my heartbeat stop and 
 EVTOPT_TUTOSOCI_21020A;Hopefully I won't come to regret this...;;;;;;;;;;;;x
 EVTDESC_TUTOSOCI_21021;I look through my library and I manage to find a few more tomes relating to the dark subject of necromancy.;;;;;;;;;;;;x
 EVTOPT_TUTOSOCI_21021A;Today I begin my studies.;;;;;;;;;;;;x
+# Battle mage training;;;;;;;;;;;;;
+battle_mage_training;Initiate battle mage training;;;;;;;;;;;;x
+battle_mage_training_desc;Study to become a battle mage.;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_220;During your time in the Kirin Tor you have come to realise that perhaps the more scholarly side was not ment for you. You want to learn how to topple towers with explosions and freeze enemies with a mighty blizzard. Perhaps it is time to abandon your more scholarly pursuits in favour of a more battle oriented style of magic?;;;;;;;;;;;;x
+TITLE_TUTOSOCI_220;Battle mage training;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_220A;I was born to be a fighter!;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_220B;Perhaps I should stick to my books for now...;;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_221;Your training to become a battle mage is progressing well, however you are now realizing that if you want to keep improving you will need to start specializing. Which specialization should I focus on?;;;;;;;;;;;;x
+TITLE_TUTOSOCI_221;Tough choices;;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_221A;Arcane;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_221B;Fire;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_221C;Frost;;;;;;;;;;;x
+EVTDESC_TUTOSOCI_222;After years of intense training with some of the greatest mages of the Kirin Tor I have finally mastered the use of magic in combat.;;;;;;;;;;;x
+TITLE_TUTOSOCI_222;Training finished;;;;;;;;;;;x
+EVTOPT_TUTOSOCI_222;Ready for action!;;;;;;;;;;;x

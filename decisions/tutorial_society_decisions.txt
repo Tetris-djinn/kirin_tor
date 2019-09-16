@@ -223,4 +223,20 @@ society_decisions = { #only available to members of a society
 			change_society_currency = -250
 		}
 	}
+	# Train to become battle mage decision
+	battle_mage_training = {
+		is_high_prio = yes
+		potential = {
+			society_rank >= 3
+		}
+		allow = {
+			society_currency = 500
+			martial >= 15
+		}
+		effect = {
+			change_society_currency = -500
+			narrative_event = { id = TUTOSOCI.220 }
+		}
+
+	}
 }
