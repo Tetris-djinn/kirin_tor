@@ -60,4 +60,8 @@ spriteTypes = {
 		name = "GFX_event_window_society_quest_background_tutorial_society"
 		textureFile = "gfx/interface/society_quest/mission_bg_tutorial_society.dds"
 	}
+	spriteType = {
+		name = GFX_trait_battle_mage
+		texturefile = gfx/traits/kirin_tor.dds
+	}
 }

@@ -1,0 +1,8 @@
+battle_mage = {
+	random = no
+	diplomacy = -1
+	stewardship = -1
+	learning = -2
+	martial = 5
+	combat_rating = 15
+}

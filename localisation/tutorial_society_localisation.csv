@@ -203,3 +203,5 @@ EVTOPT_TUTOSOCI_221C;Frost;;;;;;;;;;;x
 EVTDESC_TUTOSOCI_222;After years of intense training with some of the greatest mages of the Kirin Tor I have finally mastered the use of magic in combat.;;;;;;;;;;;x
 TITLE_TUTOSOCI_222;Training finished;;;;;;;;;;;x
 EVTOPT_TUTOSOCI_222;Ready for action!;;;;;;;;;;;x
+battle_mage;Battle mage;;;;;;;;;;x
+battle_mage_desc;This person has put great focus on combat based magic.;;;;;;;;;;x
