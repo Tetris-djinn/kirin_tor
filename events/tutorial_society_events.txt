@@ -1076,15 +1076,16 @@ narrative_event = {
 	is_triggered_only = yes
 	option = {
 		name = EVTOPT_TUTOSOCI_222
+		add_trait = battle_mage
 		if = {
 			limit = {
-				has_character_flag = arcane
+				has_character_flag = arcane_mage
 			}
 			add_trait = arcane_mage
 		}
 		else_if = {
 			limit = {
-				has_character_flag = fire
+				has_character_flag = fire_mage
 			}
 			add_trait = fire_mage
 		}

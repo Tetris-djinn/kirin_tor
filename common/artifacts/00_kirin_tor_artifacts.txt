@@ -1,5 +1,6 @@
 slots = {
 	insignia = 1
+	spellbook = 1
 }
 ebonchill = {
 	quality = 5
@@ -168,4 +169,18 @@ insignia_lvl_4_theory = {
 
 	picture = GFX_inv_misc_book_16
 	slot = insignia
+}
+spellbook = {
+	quality = 1
+	flags = { spellbook kirin_tor }
+
+	active = {
+		is_adult = yes
+		is_mage_class_trigger = yes
+		allowed_gift = {
+			always = no
+		}
+	}
+	picture = GFX_inv_misc_book_10
+	slot = spellbook
 }
