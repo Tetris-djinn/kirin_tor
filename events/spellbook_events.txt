@@ -1,0 +1,29 @@
+namespace = SPB
+character_event = {
+	id = SPB.010
+	desc = EVTDESC_SPB_010
+    picture = GFX_evt_throne_room
+    border = GFX_event_normal_frame_war
+
+    is_triggered_only = yes
+
+    option = {
+    	name = {
+    		text = SPB_frostbolt
+    	}
+	   	trigger = {
+    		can_learn_frostbolt_trigger = yes
+    	}
+    }
+    option = {
+    	name = {
+    		text = SPB_fireball
+    	}
+    	trigger = {
+    		can_learn_fireball_trigger = yes
+	   	}
+    }
+    option = {
+    	name = EVTOPT_010A
+    }
+}

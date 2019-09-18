@@ -211,3 +211,8 @@ fire_mage;Fire mage;;;;;;;;;;x
 fire_mage_desc;This person uses fire magic in combat.;;;;;;;;;;x
 frost_mage;Frost mage;;;;;;;;;;x
 frost_mage_desc;This person uses frost magic in combat.;;;;;;;;;;x
+# A whole heap of spellbook stuff;;;;;;;;;;;;;
+EVTDESC_SPB_010;Which spell do you want to learn?;;;;;;;;;;;;x
+SPB_frostbolt;Frostbolt;;;;;;;;;;;;x
+SPB_fireball;Fireball;;;;;;;;;;;;x
+EVTOPT_010A;Nothing;;;;;;;;;;;;x

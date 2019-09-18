@@ -172,14 +172,11 @@ insignia_lvl_4_theory = {
 }
 spellbook = {
 	quality = 1
-	flags = { spellbook kirin_tor }
+	flags = { spellbook kirin_tor frostbolt}
 
 	active = {
 		is_adult = yes
 		is_mage_class_trigger = yes
-		allowed_gift = {
-			always = no
-		}
 	}
 	picture = GFX_inv_misc_book_10
 	slot = spellbook

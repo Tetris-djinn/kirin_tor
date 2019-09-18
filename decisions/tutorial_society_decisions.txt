@@ -245,4 +245,14 @@ society_decisions = { #only available to members of a society
 			factor = 0.03
 		}
 	}
+	# Learn from spellbook
+	learn_from_spellbook = {
+		is_high_prio = yes
+		potential = {
+			can_learn_from_spellbook_trigger = yes
+		}
+		effect = {
+			character_event = { id = SPB.010 }
+		}
+	}
 }

@@ -40,3 +40,37 @@ need_infertile_trait_trigger = {
 		}
 	}
 }
+can_learn_from_spellbook_trigger = {
+	is_alive = yes
+	is_dying = no
+
+	any_artifact = {
+		artifact_type = spellbook
+		is_artifact_equipped = yes
+		PREV = {
+			OR = {	
+				can_learn_frostbolt_trigger = yes
+				can_learn_fireball_trigger	= yes
+			}
+		}
+	}
+}
+can_learn_frostbolt_trigger = {
+	is_alive = yes
+	is_dying = no
+
+	any_artifact = {
+		artifact_type = spellbook
+		is_artifact_equipped = yes
+		has_artifact_flag = frostbolt
+		NOT = { PREV = { has_character_flag = frostbolt }}
+	}
+}
+can_learn_fireball_trigger = {
+	any_artifact = {
+		artifact_type = spellbook
+		is_artifact_equipped = yes
+		has_artifact_flag = fireball
+		NOT = { PREV = { has_character_flag = fireball }}
+	}
+}
