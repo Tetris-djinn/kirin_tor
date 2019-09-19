@@ -14,6 +14,7 @@ character_event = {
 	   	trigger = {
     		can_learn_frostbolt_trigger = yes
     	}
+    	set_character_flag = frostbolt
     }
     option = {
     	name = {
@@ -27,3 +28,76 @@ character_event = {
     	name = EVTOPT_010A
     }
 }
+character_event = {
+	id = SPB.020
+	desc = EVTDESC_SPB_020
+    picture = GFX_evt_throne_room
+    border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPT_020A
+		if = {
+			limit = {
+				is_ruler = yes
+				war = yes
+				OR = {
+					is_primary_war_attacker = yes
+					is_primary_war_defender = yes
+					independent = yes
+				}
+			}
+			any_current_enemy = {
+				limit = {
+					at_location = ROOT
+					in_command = yes
+					prisoner = no
+				}
+				if = {
+					limit = { ROOT = { trait = frost_mage } }
+					troops = -0.015
+				}
+				else = {
+					troops = -0.01
+				}
+
+			}
+			any_current_enemy = {
+				any_realm_character = {
+					limit = {
+						at_location = ROOT
+						in_command = yes
+						prisoner = no
+						NOT = { has_character_flag = mage_spell_target }
+					}
+					if = {
+						limit = { ROOT = { trait = frost_mage } }
+						troops = -0.015
+						morale = -0.025
+					}
+					else = {
+						troops = -0.01
+						morale = -0.02
+					}
+				}
+			}
+			clr_character_flag = use_spell_cooldown_flag
+			set_character_flag = use_spell_cooldown_flag
+			remove_1_mana_effect = yes
+		}
+	}
+	option = {
+		name = EVTOPT_020B
+	}
+}
+#character_event = {
+#	id = SPB.030
+#	hide_window = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		
+#	}
+#}

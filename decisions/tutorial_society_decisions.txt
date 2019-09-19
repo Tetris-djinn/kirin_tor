@@ -251,8 +251,44 @@ society_decisions = { #only available to members of a society
 		potential = {
 			can_learn_from_spellbook_trigger = yes
 		}
+		allow = {
+			custom_tooltip = {
+				text = has_not_used_decision_12_months_tooltip
+				hidden_tooltip = {
+					OR = {
+						NOT = { has_character_flag = learn_spell_cooldown_flag }
+						had_character_flag = { flag = learn_spell_cooldown_flag months = 12 }
+					}
+				}
+			}
+		}
 		effect = {
 			character_event = { id = SPB.010 }
+		}
+	}
+	# Cast frostbolt
+	cast_frostbolt = {
+		is_high_prio = yes
+		potential = {
+			ai = no
+			in_battle = yes
+			in_command = yes
+			has_character_flag = frostbolt
+		}
+		allow = {
+			has_1_mana_trigger = yes
+			custom_tooltip = {
+				text = has_not_used_decision_5_days_tooltip
+				hidden_tooltip = {
+					OR = {
+						NOT = { has_character_flag = use_spell_cooldown_flag }
+						had_character_flag = { flag = use_spell_cooldown_flag days = 5 }
+					}
+				}
+			}
+		}
+		effect = {
+			character_event = { id = SPB.020 }
 		}
 	}
 }
