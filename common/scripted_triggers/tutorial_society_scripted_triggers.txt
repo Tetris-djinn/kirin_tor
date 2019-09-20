@@ -49,8 +49,9 @@ can_learn_from_spellbook_trigger = {
 		is_artifact_equipped = yes
 		PREV = {
 			OR = {	
-				can_learn_frostbolt_trigger = yes
-				can_learn_fireball_trigger	= yes
+				can_learn_frostbolt_trigger 	  = yes
+				can_learn_fireball_trigger		  = yes
+				can_learn_arcane_missiles_trigger = yes
 			}
 		}
 	}
@@ -72,5 +73,13 @@ can_learn_fireball_trigger = {
 		is_artifact_equipped = yes
 		has_artifact_flag = fireball
 		NOT = { PREV = { has_character_flag = fireball }}
+	}
+}
+can_learn_arcane_missiles_trigger = {
+	any_artifact = {
+		artifact_type = spellbook
+		is_artifact_equipped = yes
+		has_artifact_flag = arcane_missiles
+		NOT = { PREV = { has_character_flag = arcane_missiles }}
 	}
 }

@@ -23,11 +23,42 @@ character_event = {
     	trigger = {
     		can_learn_fireball_trigger = yes
 	   	}
+	   	set_character_flag = fireball
     }
     option = {
-    	name = EVTOPT_010A
+    	name = {
+    		text = SPB_arcane_missiles
+    	}
+    	trigger = {
+    		can_learn_arcane_missiles_trigger = yes
+    	}
+    	set_character_flag = arcane_missiles
+    }
+    option = {
+    	name = {
+    		text = SPB_More_options
+    	}
+    	character_event = { id = SPB.011 }
     }
 }
+character_event = {
+	id = SPB.011
+	desc = EVTDESC_SPB_011
+    picture = GFX_evt_throne_room
+    border = GFX_event_normal_frame_war
+
+    is_triggered_only = yes
+
+    option = {
+    	name = {
+    		text = SPB_Nothing
+    	}
+    }
+}
+
+# Damage spells
+
+# Frostbolt
 character_event = {
 	id = SPB.020
 	desc = EVTDESC_SPB_020
@@ -57,11 +88,12 @@ character_event = {
 				if = {
 					limit = { ROOT = { trait = frost_mage } }
 					troops = -0.015
+					morale = -0.025
 				}
 				else = {
 					troops = -0.01
+					morale = -0.02
 				}
-
 			}
 			any_current_enemy = {
 				any_realm_character = {
@@ -69,7 +101,6 @@ character_event = {
 						at_location = ROOT
 						in_command = yes
 						prisoner = no
-						NOT = { has_character_flag = mage_spell_target }
 					}
 					if = {
 						limit = { ROOT = { trait = frost_mage } }
@@ -86,9 +117,165 @@ character_event = {
 			set_character_flag = use_spell_cooldown_flag
 			remove_1_mana_effect = yes
 		}
+		any_liege = {
+			limit = {
+				NOT = { character = ROOT }
+				war = yes
+				OR = {
+					is_primary_war_attacker = yes
+					is_primary_war_defender = yes
+					independent = yes
+				}
+			}
+			any_current_enemy = {
+				limit = {
+					at_location = ROOT
+					in_command = yes
+					prisoner = no
+				}
+				if = {
+					limit = { ROOT = { trait = frost_mage } }
+					troops = -0.015
+					morale = -0.025
+				}
+				else = {
+					troops = -0.01
+					morale = -0.02
+				}
+			}
+			any_current_enemy = {
+				limit = {
+					at_location = ROOT
+					in_command = yes
+					prisoner = no
+				}
+				if = {
+					limit = { ROOT = { trait = frost_mage } }
+					troops = -0.015
+					morale = -0.025
+				}
+				else = {
+					troops = -0.01
+					morale = -0.02
+				}
+			}
+		}
 	}
+
 	option = {
-		name = EVTOPT_020B
+		name = {
+			text = EVTOPT_020B
+		}
+	}
+}
+# Fireball
+character_event = {
+	id = SPB.021
+	desc = EVTDESC_SPB_021
+    picture = GFX_evt_throne_room
+    border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPT_021A
+		if = {
+			limit = {
+				is_ruler = yes
+				war = yes
+				OR = {
+					is_primary_war_attacker = yes
+					is_primary_war_defender = yes
+					independent = yes
+				}
+			}
+			any_current_enemy = {
+				limit = {
+					at_location = ROOT
+					in_command = yes
+					prisoner = no
+				}
+				if = {
+					limit = { ROOT = { trait = fire_mage } }
+					troops = -0.015
+					morale = -0.025
+				}
+				else = {
+					troops = -0.01
+					morale = -0.02
+				}
+			}
+			any_current_enemy = {
+				any_realm_character = {
+					limit = {
+						at_location = ROOT
+						in_command = yes
+						prisoner = no
+					}
+					if = {
+						limit = { ROOT = { trait = fire_mage } }
+						troops = -0.015
+						morale = -0.025
+					}
+					else = {
+						troops = -0.01
+						morale = -0.02
+					}
+				}
+			}
+			clr_character_flag = use_spell_cooldown_flag
+			set_character_flag = use_spell_cooldown_flag
+			remove_1_mana_effect = yes
+		}
+		any_liege = {
+			limit = {
+				NOT = { character = ROOT }
+				war = yes
+				OR = {
+					is_primary_war_attacker = yes
+					is_primary_war_defender = yes
+					independent = yes
+				}
+			}
+			any_current_enemy = {
+				limit = {
+					at_location = ROOT
+					in_command = yes
+					prisoner = no
+				}
+				if = {
+					limit = { ROOT = { trait = fire_mage } }
+					troops = -0.015
+					morale = -0.025
+				}
+				else = {
+					troops = -0.01
+					morale = -0.02
+				}
+			}
+			any_current_enemy = {
+				limit = {
+					at_location = ROOT
+					in_command = yes
+					prisoner = no
+				}
+				if = {
+					limit = { ROOT = { trait = fire_mage } }
+					troops = -0.015
+					morale = -0.025
+				}
+				else = {
+					troops = -0.01
+					morale = -0.02
+				}
+			}
+		}
+	}
+
+	option = {
+		name = {
+			text = EVTOPT_020B
+		}
 	}
 }
 #character_event = {
