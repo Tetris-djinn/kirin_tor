@@ -223,3 +223,6 @@ EVTOPT_010A;Nothing;;;;;;;;;;;;x
 EVTDESC_SPB_020;I have decided to devastate the enemy army with a flurry of frostbolts.;;;;;;;;;;;x
 EVTOPT_020A;Pew Pew!;;;;;;;;;;;x
 EVTOPT_020B;Actually I'd rather not...;;;;;;;;;;;x
+# Fireball;;;;;;;;;;;;
+EVTDESC_SPB_020;I have decided to devastate the enemy army with a flurry of fireballs.;;;;;;;;;;;x
+EVTOPT_021A;Pew Pew!;;;;;;;;;;;x
