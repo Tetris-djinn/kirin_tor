@@ -211,18 +211,43 @@ fire_mage;Fire mage;;;;;;;;;;x
 fire_mage_desc;This person uses fire magic in combat.;;;;;;;;;;x
 frost_mage;Frost mage;;;;;;;;;;x
 frost_mage_desc;This person uses frost magic in combat.;;;;;;;;;;x
+# Mage level triggers
+is_level_1_mage_tooltip;Is a level 1 mage or higher.;;;;;;;;;;;;x
+is_level_2_mage_tooltip;Is a level 2 mage or higher.;;;;;;;;;;;;x
+is_level_3_mage_tooltip;Is a level 3 mage or higher.;;;;;;;;;;;;x
+is_level_4_mage_tooltip;Is a level 4 mage or higher.;;;;;;;;;;;;x
+is_level_5_mage_tooltip;Is a level 5 mage or higher.;;;;;;;;;;;;x
+is_level_6_mage_tooltip;Is a level 6 mage or higher.;;;;;;;;;;;;x
+is_level_7_mage_tooltip;Is a level 7 mage or higher.;;;;;;;;;;;;x
+is_level_8_mage_tooltip;Is a level 8 mage or higher.;;;;;;;;;;;;x
+is_level_9_mage_tooltip;Is a level 9 mage or hisher.;;;;;;;;;;;;x
+is_level_10_mage_tooltip;Is a level 10 mage or higher.;;;;;;;;;;;;x
 # A whole heap of spellbook stuff;;;;;;;;;;;;;
+spellbook;Spellbook;;;;;;;;;;;;x
+spellbook_desc;A simple spellbook. Used by mages to note down their spells.;;;;;;;;;;;;x
 has_not_used_decision_12_months_tooltip;Has not learned a spell in 1 year;;;;;;;;;;;;x
 has_not_used_decision_5_days_tooltip;Has not used a spell in 5 day;;;;;;;;;;;;x
 EVTDESC_SPB_010;Which spell do you want to learn?;;;;;;;;;;;;x
+SPB_more_options;More Options...;;;;;;;;;;;;x
+SPB_nothing;Nothing;;;;;;;;;;;;x
 SPB_frostbolt;Frostbolt;;;;;;;;;;;;x
 SPB_fireball;Fireball;;;;;;;;;;;;x
 SPB_arcane_missiles;Arcane missiles;;;;;;;;;;;x
+SPB_mage_armor;Mage armor;;;;;;;;;;;;x
 EVTOPT_010A;Nothing;;;;;;;;;;;;x
 # Frostbolt;;;;;;;;;;;;
 EVTDESC_SPB_020;I have decided to devastate the enemy army with a flurry of frostbolts.;;;;;;;;;;;x
 EVTOPT_020A;Pew Pew!;;;;;;;;;;;x
 EVTOPT_020B;Actually I'd rather not...;;;;;;;;;;;x
 # Fireball;;;;;;;;;;;;
-EVTDESC_SPB_020;I have decided to devastate the enemy army with a flurry of fireballs.;;;;;;;;;;;x
+EVTDESC_SPB_021;I have decided to devastate the enemy army with a flurry of fireballs.;;;;;;;;;;;x
 EVTOPT_021A;Pew Pew!;;;;;;;;;;;x
+# Mage armor;;;;;;;;;;;;;
+EVTDESC_SPB_030;I have decided to use mage armor to protect myself from the harmful spells of other magic users.;;;;;;;;;;;;x
+EVTOPT_030A;This should keep me safe for a while.;;;;;;;;;;;;x
+# Research stuff;;;;;;;;;;;;;
+frost;Frost;;;;;;;;;;;;x
+fire;Fire;;;;;;;;;;;;x
+arcane;Arcane;;;;;;;;;;;;x
+EVTDESC_SPB_041;I have been studying spellcrafting for some time now and suddenly I am hit with a spark of inspiration. If I apply this knowledge I could master an evocation spell. But which element should I focus on?;;;;;;;;;;;;x
+EVTDESC_SPB_042;I have been studying spellcrafting for some time now and suddenly I am hit with a spark of inspiration. If I apply this knowledge I could master a a utility spell.;;;;;;;;;;;;x

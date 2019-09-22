@@ -149,11 +149,7 @@ society_decisions = { #only available to members of a society
 			prestige >= 3000
 			learning >= 15
 			martial >= 15
-			OR = {
-				trait = class_mage_8
-				trait = class_mage_9
-				trait = class_mage_10
-			}
+			is_level_8_mage_trigger = yes
 		}
 		effect = {
 			change_society_currency = -4000
@@ -266,6 +262,138 @@ society_decisions = { #only available to members of a society
 			character_event = { id = SPB.010 }
 		}
 	}
+	create_spellbook = {
+		is_high_prio = yes
+		potential = {
+			is_level_1_mage_trigger = yes
+			NOT = { has_artifact = spellbook}
+		}
+		effect = {
+			add_artifact = spellbook
+			if = {
+				limit = {
+					has_character_flag = frostbolt
+				}
+				any_artifact = {
+					limit = {
+						artifact_type = spellbook
+					}
+					set_artifact_flag = frostbolt
+				}
+					
+			}
+			if = {
+				limit = {
+					has_character_flag = fireball
+				}
+				any_artifact = {
+					limit = {
+						artifact_type = spellbook
+					}
+					set_artifact_flag = fireball
+				}
+					
+			}
+			if = {
+				limit = {
+					has_character_flag = arcane_missiles
+				}
+				any_artifact = {
+					limit = {
+						artifact_type = spellbook
+					}
+					set_artifact_flag = arcane_missiles
+				}
+					
+			}
+			if = {
+				limit = {
+					has_character_flag = mage_armor
+				}
+				any_artifact = {
+					limit = {
+						artifact_type = spellbook
+					}
+					set_artifact_flag = mage_armor
+				}
+					
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	merge_spellbook = {
+		potential = {
+			OR = {
+				can_merge_spellbook_frostbolt_trigger = yes
+				can_merge_spellbook_fireball_trigger = yes
+				can_merge_spellbook_arcane_missiles_trigger = yes
+				can_merge_spellbook_mage_armor_trigger = yes
+			}		
+		}
+		effect = {
+			if = {
+				limit = {
+					can_merge_spellbook_frostbolt_trigger = yes
+				}
+				any_artifact = {
+					limit = {
+						artifact_type = spellbook
+						is_artifact_equipped = yes
+					}
+					set_artifact_flag = frostbolt
+				}
+			}
+			if = {
+				limit = {
+					can_merge_spellbook_fireball_trigger = yes
+				}
+				any_artifact = {
+					limit = {
+						artifact_type = spellbook
+						is_artifact_equipped = yes
+					}
+					set_artifact_flag = fireball
+				}
+			}
+			if = {
+				limit = {
+					can_merge_spellbook_arcane_missiles_trigger = yes
+				}
+				any_artifact = {
+					limit = {
+						artifact_type = spellbook
+						is_artifact_equipped = yes
+					}
+					set_artifact_flag = arcane_missiles
+				}
+			}
+			if = {
+				limit = {
+					can_merge_spellbook_mage_armor_trigger = yes
+				}
+				any_artifact = {
+					limit = {
+						artifact_type = spellbook
+						is_artifact_equipped = yes
+					}
+					set_artifact_flag = mage_armor
+				}
+			}
+			any_artifact = {
+				limit = {
+					artifact_type = spellbook
+					is_artifact_equipped = yes
+				}
+				destroy_artifact = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	# Cast frostbolt
 	cast_frostbolt = {
 		is_high_prio = yes
@@ -314,6 +442,25 @@ society_decisions = { #only available to members of a society
 		}
 		effect = {
 			character_event = { id = SPB.021 }
+		}
+	}
+}
+targeted_decisions = {
+	cast_mage_armor = {
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 36
+		potential = {
+			has_character_flag = mage_armor
+		}
+		allow = {
+			has_2_mana_trigger = yes
+		}
+		effect = {
+			character_event = { id = SPB.030 }
+		}
+		ai_will_do = {
+			factor = 0.5
 		}
 	}
 }

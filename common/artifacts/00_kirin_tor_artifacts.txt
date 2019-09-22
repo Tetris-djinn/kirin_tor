@@ -172,7 +172,7 @@ insignia_lvl_4_theory = {
 }
 spellbook = {
 	quality = 1
-	flags = { spellbook kirin_tor frostbolt}
+	flags = { spellbook kirin_tor }
 
 	active = {
 		is_adult = yes

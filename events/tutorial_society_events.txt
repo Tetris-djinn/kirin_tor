@@ -612,10 +612,7 @@ long_character_event = {
 
 
     	NOT = { has_global_flag = ebonchill_reclaimed }
-    	OR = {
-    		trait = class_mage_9
-    		trait = class_mage_10
-    	}
+    	is_level_9_mage_trigger = yes
     }
     mean_time_to_happen = {
     	months = 24
@@ -748,11 +745,7 @@ narrative_event = {
 		prestige >= 3000
 		learning >= 15
 		martial >= 15
-		OR = {
-			trait = class_mage_8
-			trait = class_mage_9
-			trait = class_mage_10
-		}
+		is_level_8_mage_trigger = yes
 	}
 	mean_time_to_happen = {
     	months = 24

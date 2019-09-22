@@ -40,6 +40,113 @@ need_infertile_trait_trigger = {
 		}
 	}
 }
+is_level_1_mage_trigger = {
+	custom_tooltip = {
+		text = is_level_1_mage_tooltip
+		hidden_tooltip = {
+			OR = {
+				trait = class_mage_1
+				is_level_2_mage_trigger = yes
+			}
+		}
+	}
+}
+is_level_2_mage_trigger = {
+	custom_tooltip = {
+		text = is_level_2_mage_tooltip
+		hidden_tooltip = {
+			OR = {
+				trait = class_mage_2
+				is_level_3_mage_trigger = yes
+			}
+		}
+	}
+}
+is_level_3_mage_trigger = {
+	custom_tooltip = {
+		text = is_level_3_mage_tooltip
+		hidden_tooltip = {
+			OR = {
+				trait = class_mage_3
+				is_level_4_mage_trigger = yes
+			}
+		}
+	}
+}
+is_level_4_mage_trigger = {
+	custom_tooltip = {
+		text = is_level_4_mage_tooltip
+		hidden_tooltip = {
+			OR = {
+				trait = class_mage_4
+				is_level_5_mage_trigger = yes
+			}
+		}
+	}
+}
+is_level_5_mage_trigger = {
+	custom_tooltip = {
+		text = is_level_5_mage_tooltip
+		hidden_tooltip = {
+			OR = {
+				trait = class_mage_5
+				is_level_6_mage_trigger = yes
+			}
+		}
+	}
+}
+is_level_6_mage_trigger = {
+	custom_tooltip = {
+		text = is_level_6_mage_tooltip
+		hidden_tooltip = {
+			OR = {
+				trait = class_mage_6
+				is_level_7_mage_trigger = yes
+			}
+		}
+	}
+}
+is_level_7_mage_trigger = {
+	custom_tooltip = {
+		text = is_level_7_mage_tooltip
+		hidden_tooltip = {
+			OR = {
+				trait = class_mage_7
+				is_level_8_mage_trigger = yes
+			}
+		}
+	}
+}
+is_level_8_mage_trigger = {
+	custom_tooltip = {
+		text = is_level_8_mage_tooltip
+		hidden_tooltip = {
+			OR = {
+				trait = class_mage_8
+				is_level_9_mage_trigger = yes
+			}
+		}
+	}
+}
+is_level_9_mage_trigger = {
+	custom_tooltip = {
+		text = is_level_9_mage_tooltip
+		hidden_tooltip = {
+			OR = {
+				trait = class_mage_9
+				is_level_10_mage_trigger = yes
+			}
+		}
+	}
+}
+is_level_10_mage_trigger = {
+	custom_tooltip = {
+		text = is_level_10_mage_tooltip
+		hidden_tooltip = {
+			trait = class_mage_10
+		}
+	}
+}
 can_learn_from_spellbook_trigger = {
 	is_alive = yes
 	is_dying = no
@@ -52,10 +159,65 @@ can_learn_from_spellbook_trigger = {
 				can_learn_frostbolt_trigger 	  = yes
 				can_learn_fireball_trigger		  = yes
 				can_learn_arcane_missiles_trigger = yes
+				can_learn_mage_armor_trigger	  = yes
 			}
 		}
 	}
 }
+# Merging spellbook triggers
+can_merge_spellbook_frostbolt_trigger = {
+
+	any_artifact = {
+		artifact_type = spellbook
+		is_artifact_equipped = yes
+		NOT = { has_artifact_flag = frostbolt }
+	}
+	any_artifact = {
+		artifact_type = spellbook
+		NOT = { is_artifact_equipped = yes }
+		has_artifact_flag = frostbolt
+	}
+}
+can_merge_spellbook_fireball_trigger = {
+
+	any_artifact = {
+		artifact_type = spellbook
+		is_artifact_equipped = yes
+		NOT = { has_artifact_flag = fireball }
+	}
+	any_artifact = {
+		artifact_type = spellbook
+		NOT = { is_artifact_equipped = yes }
+		has_artifact_flag = fireball
+	}
+}
+can_merge_spellbook_arcane_missiles_trigger = {
+
+	any_artifact = {
+		artifact_type = spellbook
+		is_artifact_equipped = yes
+		NOT = { has_artifact_flag = arcane_missiles }
+	}
+	any_artifact = {
+		artifact_type = spellbook
+		NOT = { is_artifact_equipped = yes }
+		has_artifact_flag = arcane_missiles
+	}
+}
+can_merge_spellbook_mage_armor_trigger = {
+
+	any_artifact = {
+		artifact_type = spellbook
+		is_artifact_equipped = yes
+		NOT = { has_artifact_flag = mage_armor }
+	}
+	any_artifact = {
+		artifact_type = spellbook
+		NOT = { is_artifact_equipped = yes }
+		has_artifact_flag = mage_armor
+	}
+}
+# Learning spell triggers
 can_learn_frostbolt_trigger = {
 	is_alive = yes
 	is_dying = no
@@ -66,6 +228,7 @@ can_learn_frostbolt_trigger = {
 		has_artifact_flag = frostbolt
 		NOT = { PREV = { has_character_flag = frostbolt }}
 	}
+	is_level_1_mage_trigger = yes
 }
 can_learn_fireball_trigger = {
 	any_artifact = {
@@ -74,6 +237,7 @@ can_learn_fireball_trigger = {
 		has_artifact_flag = fireball
 		NOT = { PREV = { has_character_flag = fireball }}
 	}
+	is_level_1_mage_trigger = yes
 }
 can_learn_arcane_missiles_trigger = {
 	any_artifact = {
@@ -81,5 +245,24 @@ can_learn_arcane_missiles_trigger = {
 		is_artifact_equipped = yes
 		has_artifact_flag = arcane_missiles
 		NOT = { PREV = { has_character_flag = arcane_missiles }}
+	}
+	is_level_1_mage_trigger = yes
+}
+can_learn_mage_armor_trigger = {
+	any_artifact = {
+		artifact_type = spellbook
+		is_artifact_equipped = yes
+		has_artifact_flag = mage_armor
+		NOT = { PREV = { has_character_flag = mage_armor }}
+	}
+	learning >= 12
+	is_level_3_mage_trigger = yes
+}
+can_learn_any_spell_trigger = {
+	OR = {
+		can_learn_frostbolt_trigger = 		yes
+		can_learn_fireball_trigger = 		yes
+		can_learn_arcane_missiles_trigger = yes
+		can_learn_mage_armor_trigger = 		yes
 	}
 }

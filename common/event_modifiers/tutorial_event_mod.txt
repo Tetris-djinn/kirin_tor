@@ -5,3 +5,4 @@ tutorial_successful_mission = {
 tutorial_failed_mission = {
 	society_influence = -1
 }
+mage_armor = { icon = 2 }

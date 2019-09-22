@@ -36,14 +36,14 @@ character_event = {
     }
     option = {
     	name = {
-    		text = SPB_More_options
+    		text = SPB_more_options
     	}
     	character_event = { id = SPB.011 }
     }
 }
 character_event = {
 	id = SPB.011
-	desc = EVTDESC_SPB_011
+	desc = EVTDESC_SPB_010
     picture = GFX_evt_throne_room
     border = GFX_event_normal_frame_war
 
@@ -51,7 +51,16 @@ character_event = {
 
     option = {
     	name = {
-    		text = SPB_Nothing
+    		text = SPB_mage_armor
+    	}
+    	trigger = {
+    		can_learn_mage_armor_trigger = yes
+    	}
+    	set_character_flag = mage_armor
+    }
+    option = {
+    	name = {
+    		text = SPB_nothing
     	}
     }
 }
@@ -159,6 +168,9 @@ character_event = {
 					morale = -0.02
 				}
 			}
+			clr_character_flag = use_spell_cooldown_flag
+			set_character_flag = use_spell_cooldown_flag
+			remove_1_mana_effect = yes
 		}
 	}
 
@@ -269,6 +281,9 @@ character_event = {
 					morale = -0.02
 				}
 			}
+			clr_character_flag = use_spell_cooldown_flag
+			set_character_flag = use_spell_cooldown_flag
+			remove_1_mana_effect = yes
 		}
 	}
 
@@ -278,13 +293,181 @@ character_event = {
 		}
 	}
 }
-#character_event = {
-#	id = SPB.030
-#	hide_window = yes
-#
-#	is_triggered_only = yes
-#
-#	immediate = {
-#		
-#	}
-#}
+character_event = {
+	id = SPB.030
+	desc = EVTDESC_SPB_030
+    picture = GFX_evt_throne_room
+    border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPT_030A
+		remove_2_mana_effect = yes
+		remove_character_modifier = mage_armor
+		add_character_modifier = {
+			name = mage_armor
+			duration = 1825
+		}
+	}
+	option = {
+		name = {
+			text = EVTOPT_020B
+		}
+	}
+}
+character_event = {
+	id = SPB.040
+
+	hide_window = yes
+
+	trigger = {
+		is_level_1_mage_trigger = yes
+		can_learn_any_spell_trigger = yes
+	}
+	mean_time_to_happen = {
+		years = 3
+		modifier = {
+			factor = 0.9
+			trait = genius
+		}
+		modifier = {
+			factor = 0.95
+			trait = shrewd
+		}
+		modifier = {
+			factor = 0.95
+			trait = quick
+		}
+		modifier = {
+			factor = 0.9
+			trait = scholar
+		}
+		modifier = {
+			factor = 0.95
+			trait = erudite
+		}
+		modifier = {
+			factor = 0.95
+			martial >= 20
+		}
+		modifier = {
+			factor = 0.9
+			learning >= 20
+		}
+		modifier = {
+			factor = 1.1
+			learning <= 10
+		}
+		modifier = {
+			factor = 5
+			learning <= 5
+		}
+		modifier = {
+			factor = 1.5
+			trait = slow
+		}
+		modifier = {
+			factor = 5
+			trait = imbecile
+		}
+	}
+	immediate = {
+		random_list = {
+			1 = {
+				modifier = {
+					factor = 1.2
+					trait = battle_mage
+				}
+				character_event = { id = SPB.041 }
+			}
+			1 = {
+				character_event = { id = SPB.042 }
+			}
+		}
+	}
+}
+character_event = {
+	id = SPB.041
+
+	desc = EVTDESC_SPB_041
+    picture = GFX_evt_throne_room
+    border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+    	name = {
+    		text = SPB_frost
+    	}
+	   	trigger = {
+    		can_learn_frostbolt_trigger = yes
+    	}
+    	set_character_flag = frostbolt
+    	any_artifact = {
+    		limit = {
+				artifact_type = spellbook
+				is_artifact_equipped = yes
+			}
+			set_artifact_flag = frostbolt
+    	}
+    }
+    option = {
+    	name = {
+    		text = SPB_fireball
+    	}
+    	trigger = {
+    		can_learn_fireball_trigger = yes
+	   	}
+	   	set_character_flag = fireball
+	   	any_artifact = {
+    		limit = {
+				artifact_type = spellbook
+				is_artifact_equipped = yes
+			}
+			set_artifact_flag = fire
+    	}
+    }
+    option = {
+    	name = {
+    		text = SPB_arcane_missiles
+    	}
+    	trigger = {
+    		can_learn_arcane_missiles_trigger = yes
+    	}
+    	set_character_flag = arcane_missiles
+    	any_artifact = {
+    		limit = {
+				artifact_type = spellbook
+				is_artifact_equipped = yes
+			}
+			set_artifact_flag = arcane
+    	}
+    }
+}
+character_event = {
+	id = SPB.042
+
+	desc = EVTDESC_SPB_042
+    picture = GFX_evt_throne_room
+    border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = {
+    		text = SPB_mage_armor
+    	}
+    	trigger = {
+    		can_learn_mage_armor_trigger = yes
+	   	}
+	   	set_character_flag = mage_armor
+	   	any_artifact = {
+    		limit = {
+				artifact_type = spellbook
+				is_artifact_equipped = yes
+			}
+			set_artifact_flag = mage_armor
+    	}
+	}
+}
